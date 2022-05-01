@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+:root {
+  --heading-font: "Playfair Display", serif;
+  --main-font: "Montserrat", sans-serif;
+  --gray1: #333333;
+  --gray2: #4f4f4f;
+  --orange: #f2994a;
+}
+
+body {
+  font-family: var(--main-font);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 32px;
+  margin-bottom: 0.75rem;
+}
+
+.container {
+  width: 90vw;
+  margin: auto;
+}
+
+.dish-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#dish-description {
+  display: flex;
+  align-items: flex-start;
+}
+
+#dish-description svg {
+  width: 13px;
+  height: 8px;
+  margin-right: 1rem;
+  margin-top: 0.4rem;
+  display: block;
+  flex-shrink: 0;
+}
+#dish-description p {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--gray2);
+}
+#cover-photo {
+  height: 200px;
+  border-radius: 12px;
+}
+.side-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-between;
+  grid-row-gap: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.side-details .info-detail {
+  display: flex;
+  align-items: center;
+}
+.side-details .yields {
+  color: var(--orange);
+  grid-column: 1 / span 3;
+}
+.side-details .info-detail .detail h5 {
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 10px;
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+
+.side-details .info-detail .detail p {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.side-details .info-detail i {
+  margin-right: 4px;
+  font-size: 1rem;
+}
+
+.main-detail h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--gray1);
+  margin-bottom: 1rem;
+}
+
+.main-detail .ingredient-detail h4 {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--gray1);
+  margin-bottom: 1rem;
+}
+
+.ingredient-detail-list {
+  margin-bottom: 2.5rem;
+}
+
+.ingredient-detail-list-item {
+  display: flex;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+}
+.ingredient-detail-list-item input {
+  margin-right: 0.5rem;
+  margin-top: 2px;
+  border: 1px solid #828282;
+  width: 21px;
+  height: 21px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.instruction-detail {
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+.instruction-detail .instruction-detail-numbering {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  background: var(--orange);
+  border-radius: 6px;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 1.5rem;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+
+  margin-right: 1rem;
+}
+
+.instruction-detail .instruction-detail-numbering p {
+  margin-top: -8px;
+}
+.instruction-detail-instruction {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
