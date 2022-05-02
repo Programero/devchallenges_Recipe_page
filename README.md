@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://programero.github.io/devchallenges_Recipe_page/}">
+    <a href="https://programero.github.io/devchallenges_Recipe_page/">
       Demo
     </a>
     <span> | </span>
